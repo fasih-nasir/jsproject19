@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body,*{
+        font-family: play;
+    }
+    button:hover
+    {
+        transform: scale(1.1);
+        color:  #5d5dafb4;
+        border: 1px solid  #5d5dafb4;
+        background-color: white;
+    }
+    button,select{
+        transition: 1.10s ease;
+        /* border-radius:5px; */
+        padding: 3px 25px !important;
+        color: white;
+        border: none;
+        /* font-family: pl; */
+        background-color: #5d5dafb4;
+    }
+    div{
+        margin: 10px 5px;
+    }
+</style>
+<body>
+    <div>
+        <label for="">Enter Name</label>
+    <input type="text" name="" id="i1" placeholder="First Name">
+    <input type="text" name="" id="i2" placeholder="Last Name">
+    <button onclick="fn()">Click</button>
+    <button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+    <h3 id="demo1"></h3>
+</div>
+<div>
+    <label for="">Enter Num</label>
+<input type="text" name="" id="i3" placeholder="First Number">
+<input type="text" name="" id="i4" placeholder="Sec Number">
+<select name="" id="sign">
+    <option value="Sign" selected>Signs</option>
+    <option value="+" >+</option>
+    <option value="-" >-</option>
+    <option value="/" >/</option>
+    <option value="*" >*</option>
+</select>
+<button onclick="fn1()">Click</button>
+<button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+<h3 id="demo2"></h3>
+</div>
+<div>
+    <label for="">Enter Number For Square</label>
+<input type="text" name="" id="i5" placeholder="Number">
+
+<button onclick="fn2()">Click</button>
+<button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+<h3 id="demo3"></h3>
+</div>
+<div>
+    <label for="">Enter Number For Fictorial</label>
+<input type="text" name="" id="i6" placeholder="Number">
+
+<button onclick="fn3()">Click</button>
+<button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+<h3 id="demo4"></h3>
+</div>
+<div>
+    <label for="">Enter Num</label>
+<input type="text" name="" id="i7" placeholder="Start Num">
+<input type="text" name="" id="i8" placeholder="End Num">
+<button onclick="fn4()">Click</button>
+<button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+<h3 id="demo5"></h3>
+</div>
+<div>
+    <label for="">Enter Num</label>
+<input type="text" name="" id="i9" placeholder="Perpendiuclar">
+<input type="text" name="" id="i10" placeholder="Hypotenus">
+<button onclick="fn5()">Click</button>
+<button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+<h3 id="demo6"></h3>
+</div>
+<div>
+    <label for="">Enter Num</label>
+<input type="text" name="" id="i11" placeholder="Palindrome">
+<!-- <input type="text" name="" id="i12" placeholder="Hypotenus"> -->
+<button onclick="fn6()">Click</button>
+<button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+<h3 id="demo7"></h3>
+</div>
+
+<div>
+    <label for="">Enter</label>
+<input type="text" name="" id="i12" placeholder="First Letter UpperCase">
+<!-- <input type="text" name="" id="i12" placeholder="Hypotenus"> -->
+<button onclick="fn7()">Click</button>
+<button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+<h3 id="demo8"></h3>
+</div>
+
+<div>
+    <label for="">Enter</label>
+<input type="text" name="" id="i13" placeholder="First Largest Word">
+<!-- <input type="text" name="" id="i12" placeholder="Hypotenus"> -->
+<button onclick="fn8()">Click</button>
+<button onclick="ref()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+<h3 id="demo9"></h3>
+</div>
+
+<script>
+    function ref(){
+        location.reload()
+    }
+        function fn(){
+var a=document.getElementById("i1").value;
+var b=document.getElementById("i2").value;
+var c="Welcome Have A Good Day "+a+b;
+document.getElementById("demo1").innerHTML=c
+// alert(c)
+    }
+    function fn1(){
+var a=document.getElementById("i3").value;
+var b=document.getElementById("i4").value;
+var c=document.getElementById("sign").value;
+var d= `${a} ${c} ${b} `;
+document.getElementById("demo2").innerHTML=eval(d)
+// alert(c)
+    }
+    // alert(fn(a,b))
+    function fn2(){
+       var a=document.getElementById("i5").value
+       var b=a*a
+       document.getElementById("demo3").innerHTML=b
+}
+function fn3(){
+    var a=document.getElementById("i6").value;
+var result = 1;
+for(let i=2;i<=a;i++){
+    result *= i;
+    console.log( result)
+}
+document.getElementById("demo4").innerHTML=result
+}
+function fn4(){
+    var a=document.getElementById("i7").value;
+    var b=document.getElementById("i8").value;
+
+for(let i=a;i<=b;i++){
+    // result *= i;
+    var c=i
+    console.log(c)
+    document.getElementById("demo5").innerHTML+=c+" , ";
+}
+}
+function fn5(){
+    var a=document.getElementById("i9").value;
+    var b=document.getElementById("i10").value;
+    var c=a*a + b * b;
+    console.log(eval(c))
+    document.getElementById("demo6").innerHTML+="Hyp is "+c;
+}
+function fn6(){
+var name=document.getElementById("i11").value;
+// document.write(name.length)
+    for(var i=0;i<name.length/2;i++){
+// document.write(name[name.length-1-i])
+// document.write(name[i])/
+    // document.write(name[name.length - 1 - i])
+if(name[i] !== name[name.length - 1 - i] ){
+    document.getElementById("demo7").innerHTML=` ${name} is Not Palindrome`;
+    break;
+}
+else{
+    document.getElementById("demo7").innerHTML=` ${name} is  Palindrome`;
+break;
+}
+}
+}
+function fn7(){
+var le=document.getElementById("i12").value;
+var le1=le.split(" ")
+// document.write(le1[0][0].toLocaleUpperCase())
+for(let i=0;i<le1.length;i++){
+    var c=le1[i][0].toUpperCase()
+    var d=le1[i].slice(1)
+    // document.write(d)
+    document.getElementById("demo8").innerHTML+=c+d
+}
+}
+function fn8(){
+var qwe=document.getElementById("i13").value;
+var qw=qwe.split(" ")
+var k=""
+// document.write(qw)
+for(let i=0;i<qw.length;i++){
+// document.write(qw[i])
+if(qw[i].length > k.length){
+    k=qw[i]
+}
+}
+document.getElementById("demo9").innerHTML=k
+}
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
