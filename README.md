@@ -36,8 +36,8 @@ Contributions are welcome! If you have any suggestions, improvements, or feature
 
 | Color          | Hex          |
 | -------------- | ------------ |
-| Primary Color  | ![#ff6347](https://placehold.co/15x15/ff6347/ff6347.png) `#212529` |
-| Secondary Color| ![#4682b4](https://placehold.co/15x15/4682b4/4682b4.png) `#4F4F4F` |
+| Primary Color  | ![#212529](https://placehold.co/15x15/ff6347/ff6347.png) `#212529` |
+| Secondary Color| ![#4F4F4F](https://placehold.co/15x15/4682b4/4682b4.png) `#4F4F4F` |
 
 
 ## Demo
