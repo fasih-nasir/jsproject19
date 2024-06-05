@@ -36,7 +36,7 @@ Contributions are welcome! If you have any suggestions, improvements, or feature
 
 | Color          | Hex          |
 | -------------- | ------------ |
-| Primary Color  | ![#ff6347](https://placehold.co/15x15/ff6347/ff6347.png) `#8C8CC6` |
+| Primary Color  | ![#ff6347](https://placehold.co/15x15/ff6347/ff6347.png) `#212529` |
 | Secondary Color| ![#4682b4](https://placehold.co/15x15/4682b4/4682b4.png) `#4F4F4F` |
 
 
@@ -44,7 +44,7 @@ Contributions are welcome! If you have any suggestions, improvements, or feature
 
 This link will take you to the live demonstration of the project, where you can interact with the actual application and experience its features firsthand.
 
-[Live Demo](https://fasih-nasirjsproject20.netlify.app/)
+[Live Demo](https://fasih-nasirjsproject19.netlify.app/)
 
 ## GitHub Profile Introduction
 
